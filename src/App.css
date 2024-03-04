@@ -1,38 +1,73 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+  background-color: lightgoldenrodyellow;
+  text-align: center;
+
+}
+
+#header{
+  text-align:center;
+  padding:10px 10px;
+  margin: auto;
+  /* box-sizing: border-box; */
+  background-color: white;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  border-radius: 9px;
+  /* margin: 100px 0px; */
+  max-width: 200px;
+}
+#input{
+  margin: 20px 0px;
+  width: 310px;
+  height: 30px;
+  border: none;
+  outline: none;
+  text-align: left;
+  text-indent: 10px;
+  padding: 5px;
+  /* padding-left: 20px; */
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  border-radius: 9px;
+}
+.btn{
+  /* justify-content: space-between; */
+  border: none;
+  padding: 10px 20px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  border-radius: 9px;
+}
+.List{
+  padding: 0;
+  margin: 20px;
+  list-style-type: none;
+
+
+}
+
+ul {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.item{
+  display:flex;
+  justify-content: space-between;
+  margin:0 auto;
+  margin-bottom: 10px;
+  /* margin: 5px 0; */
+  max-width: 400px;
+  border-radius: 9px;
+  background: white;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+*{  
+  /* display:flex; */
+  /* justify-content: space-between; */
+  /* box-sizing: border-box; */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  /* text-align: center; */
+  font-family: "Prompt", sans-serif;
+  font-weight: 500;
 }
