@@ -1,13 +1,16 @@
-FROM node:18
+FROM node:21
 
 WORKDIR /usr/src/app
 
-COPY ./package.json ./
+COPY package.json package-lock.json ./
 
-RUN npm install
 
-COPY ./src/index.js ./
+# COPY ./src/index.js ./
+
+COPY . ./
+
+RUN npm ci
 
 EXPOSE 3000
 
-CMD ["node","index.js"]
+CMD ["npm","start"]
